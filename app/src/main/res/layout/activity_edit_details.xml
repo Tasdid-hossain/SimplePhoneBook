@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_details">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/name"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/person"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/name"
+        android:layout_alignBaseline="@+id/name"
+        android:layout_alignTop="@+id/name"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/name" />
+
+
+    <ImageView
+        android:id="@+id/number"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/phone1"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/edit_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/number"
+        android:layout_alignBaseline="@+id/number"
+        android:layout_alignTop="@+id/number"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/number" />
+
+
+    <ImageView
+        android:id="@+id/email"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/email"
+        android:layout_below="@+id/number"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/email"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignTop="@+id/email"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/email" />
+
+    <ImageView
+        android:id="@+id/categoryedit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/group"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <Spinner
+        android:id="@+id/edit_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/email"
+        android:layout_alignBaseline="@+id/categoryedit"
+        android:layout_alignTop="@+id/categoryedit"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/categoryedit" />
+
+    <Button
+        android:id="@+id/saveContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Save Contact"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDetails">
+
+
+
+    <ImageView
+        android:id="@+id/viewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/family_icon_big1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/viewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="110dp"
+        android:text="Rosie Bela"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/viewImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewCategory"
+        android:text="Friends"
+        app:layout_constraintTop_toBottomOf="@id/viewName"
+        app:layout_constraintLeft_toRightOf="@id/viewImage"
+        android:layout_marginLeft="12dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/viewa"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/viewImage"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewa"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/call"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendemail"
+        app:layout_constraintTop_toBottomOf="@id/viewa"
+        android:src="@drawable/send_email"
+        app:layout_constraintLeft_toRightOf="@id/call"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/viewb"
+        app:layout_goneMarginTop="10dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/sendemail"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/call"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/viewb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/callA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPhone"
+        android:text="123123123"
+        app:layout_constraintLeft_toRightOf="@id/callA"
+        app:layout_constraintTop_toBottomOf="@id/viewb"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:src="@drawable/send_email"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/callA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/emailA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewEmail"
+        android:text="123123123"
+        app:layout_constraintLeft_toRightOf="@id/callA"
+        app:layout_constraintTop_toBottomOf="@id/callA"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="12dp"/>
+
+</android.support.constraint.ConstraintLayout>
